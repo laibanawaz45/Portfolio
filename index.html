@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laiba - Front-End Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Laiba</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#learning" class="nav-link">Learning</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <span class="icon-sun" aria-hidden="true">&#9728;</span>
+                <span class="icon-moon" aria-hidden="true">&#9789;</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-glow-2" aria-hidden="true"></div>
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting fade-up">
+                    <span class="hero-greeting-dot" aria-hidden="true"></span>
+                    Hello, I'm
+                </p>
+                <h1 class="hero-name fade-up">
+                    Laiba
+                    <span class="hero-name-accent">.</span>
+                </h1>
+                <h2 class="hero-title fade-up">Student at SMIT</h2>
+                <p class="hero-desc fade-up">I'm learning front-end development — building responsive and interactive websites using HTML, CSS and JavaScript.</p>
+                <div class="hero-stats fade-up">
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">3+</span>
+                        <span class="hero-stat-label">Projects built</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">SMIT</span>
+                        <span class="hero-stat-label">Student</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">HTML / CSS / JS</span>
+                        <span class="hero-stat-label">Core stack</span>
+                    </div>
+                </div>
+                <div class="hero-divider fade-up" aria-hidden="true"></div>
+                <div class="hero-tags fade-up">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Responsive Design</span>
+                </div>
+                <div class="hero-buttons fade-up">
+                    <a href="#projects" class="btn btn-primary btn-lg">
+                        View My Projects
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="btn btn-outline btn-lg">
+                        GitHub
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.58-3.18 5.07 5.07 0 0 0-.34-2.73m-1.32 2.05a2.44 2.44 0 0 0 0 1.76A2.44 2.44 0 0 0 19 13.47V7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6.53a2.44 2.44 0 0 0 .34 1.41 2.44 2.44 0 0 0 1.76 1.14 2.44 2.44 0 0 0 1.41-.34 2.44 2.44 0 0 0 1.14-1.76 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-1.76 1.14 2.44 2.44 0 0 0 -.34-1.41 2.44 2.44 0 0 0-1.76-1.14 2.44 2.44 0 0 0-1.41.34 2.44 2.44 0 0 0-1.14 1.76 2.44 2.44 0 0 0 .78 2.14 2.44 2.44 0 0 0 .78 2.14 2.44 2.44 0 0 0 1.76-1.14 2.44 2.44 0 0 0 .34 1.41 2.44 2.44 0 0 0 1.76 1.14 2.44 2.44 0 0 0 1.41-.34 2.44 2.44 0 0 0 1.14-1.76 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-1.76 1.14 2.44 2.44 0 0 0-.34 1.41 2.44 2.44 0 0 0-1.76 1.14 2.44 2.44 0 0 0 1.14 1.76 2.44 2.44 0 0 0 .78 2.14 2.44 2.44 0 0 0 .78 2.14 2.44 2.44 0 0 0 1.76-1.14 2.44 2.44 0 0 0 .34-1.41 2.44 2.44 0 0 0-1.76-1.14 2.44 2.44 0 0 0-.34-1.41 2.44 2.44 0 0 0-1.76-1.14 2.44 2.44 0 0 0-1.41.34 2.44 2.44 0 0 0-.78 2.14 5.07 5.07 0 0 0-.34 2.73 5.44 5.44 0 0 0-1.58 3.18c1.27 3.14 4.76 5.27 6.44 7a3.37 3.37 0 0 0 .94 2.61"/></svg>
+                    </a>
+                </div>
+                <p class="hero-cta-hint fade-up">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l-5-5 5-5"/><path d="M17 7l5 5-5 5"/></svg>
+                    Scroll to explore
+                </p>
+            </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <div class="tech-strip">
+        <span class="tech-strip-label">Currently learning</span>
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span><span>Git</span><span>GitHub</span><span>Responsive Design</span><span>VS Code</span>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span><span>Git</span><span>GitHub</span><span>Responsive Design</span><span>VS Code</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-card fade-up">
+                <div class="about-card-glow" aria-hidden="true"></div>
+                <span class="section-eyebrow">
+                    <span class="section-eyebrow-dot" aria-hidden="true"></span>
+                    Who I am
+                </span>
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>I'm a student at SMIT and an aspiring Front-End Developer, passionate about creating responsive and interactive websites.</p>
+                    <p>At SMIT I'm learning and practicing HTML, CSS and JavaScript through hands-on projects. I enjoy solving problems with code and continuously improving my development skills.</p>
+                    <p>Currently, I'm focusing on strengthening my JavaScript and front-end development skills while building real-world projects.</p>
+                </div>
+                <p class="about-signature">
+                    <span class="about-signature-mark" aria-hidden="true"></span>
+                    Made with code & curiosity
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="fade-up">
+                <span class="section-eyebrow">
+                    <span class="section-eyebrow-dot" aria-hidden="true"></span>
+                    Toolbox
+                </span>
+                <h2 class="section-title">Skills &amp; Tools</h2>
+                <div class="section-sub">
+                    Technologies and tools I use to build modern, responsive web experiences.
+                </div>
+                <div class="section-underline" aria-hidden="true"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category fade-up">
+                    <div class="skill-category-accent" aria-hidden="true"></div>
+                    <div class="skill-category-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                    </div>
+                    <h3 class="skill-category-title">Front-End</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive Web Design</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-up">
+                    <div class="skill-category-accent" aria-hidden="true"></div>
+                    <div class="skill-category-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/><path d="M15 3v6h-6"/></svg>
+                    </div>
+                    <h3 class="skill-category-title">Tools</h3>
+                    <div class="skill-tags">
+                        <!-- <span class="skill-tag">Git <span class="skill-tag-count">v2.40</span></span> -->
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">DevTools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="fade-up">
+                <span class="section-eyebrow">
+                    <span class="section-eyebrow-dot" aria-hidden="true"></span>
+                    Work
+                </span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-sub">
+                    A selection of projects I've built to practice real-world front-end development.
+                </div>
+                <div class="section-underline" aria-hidden="true"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-up">
+                    <div class="project-card-accent" aria-hidden="true"></div>
+                    <div class="project-media">
+                        <div class="project-media-overlay" aria-hidden="true"></div>
+                        <span class="project-media-icon" aria-hidden="true">🧮</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">BMI Calculator</h3>
+                        <div class="project-tech">
+                            <span class="project-tech-tag">HTML</span>
+                            <span class="project-tech-tag">CSS</span>
+                            <span class="project-tech-tag">JavaScript</span>
+                        </div>
+                        <p class="project-desc">A responsive BMI calculator built using HTML, CSS and JavaScript. JavaScript processes user input and dynamically displays the result.</p>
+                        <div class="project-links">
+                            <a href="https://bmiccalculator.netlify.app/"  target="_blank" class="btn btn-sm btn-primary">
+                             Live Demo
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                            <a href="https://github.com/laibanawaz45/BMI-Calculator" target="_blank" class="btn btn-sm btn-outline btn-outline-primary">
+                                GitHub
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.58-3.18 5.07 5.07 0 0 0-.34-2.73m-1.32 2.05a2.44 2.44 0 0 0 0 1.76A2.44 2.44 0 0 0 19 13.47V7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6.53a2.44 2.44 0 0 0 .34 1.41 2.44 2.44 0 0 0 1.76 1.14 2.44 2.44 0 0 0 1.41-.34 2.44 2.44 0 0 0 1.14-1.76 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-1.76 1.14 2.44 2.44 0 0 0-.34-1.41 2.44 2.44 0 0 0-1.76-1.14 2.44 2.44 0 0 0-1.41.34 2.44 2.44 0 0 0-.78 2.14 5.07 5.07 0 0 0-.34 2.73 5.44 5.44 0 0 0-1.58 3.18c1.27 3.14 4.76 5.27 6.44 7a3.37 3.37 0 0 0 .94 2.61"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-up">
+                    <div class="project-card-accent" aria-hidden="true"></div>
+                    <div class="project-media">
+                        <div class="project-media-overlay" aria-hidden="true"></div>
+                        <span class="project-media-icon" aria-hidden="true">🛒</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Grocery Store Website</h3>
+                        <div class="project-tech">
+                            <span class="project-tech-tag">HTML</span>
+                            <span class="project-tech-tag">CSS</span>
+                            <span class="project-tech-tag">Bootstrap</span>
+                        </div>
+                        <p class="project-desc">A responsive grocery store website created to practice modern layouts, responsive design and Bootstrap components.</p>
+                        <div class="project-links">
+                            <a href="https://startling-dieffenbachia-fe135d.netlify.app/" target="_blank" class="btn btn-sm btn-primary">
+                                Live Demo
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                            <a href="https://github.com/laibanawaz45/CSS-assignment--grocery-store-" target="_blank" class="btn btn-sm btn-outline btn-outline-primary">
+                                GitHub
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.58-3.18 5.07 5.07 0 0 0-.34-2.73m-1.32 2.05a2.44 2.44 0 0 0 0 1.76A2.44 2.44 0 0 0 19 13.47V7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6.53a2.44 2.44 0 0 0 .34 1.41 2.44 2.44 0 0 0 1.76 1.14 2.44 2.44 0 0 0 1.41-.34 2.44 2.44 0 0 0 1.14-1.76 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-1.76 1.14 2.44 2.44 0 0 0-.34-1.41 2.44 2.44 0 0 0-1.76-1.14 2.44 2.44 0 0 0-1.41.34 2.44 2.44 0 0 0-.78 2.14 5.07 5.07 0 0 0-.34 2.73 5.44 5.44 0 0 0-1.58 3.18c1.27 3.14 4.76 5.27 6.44 7a3.37 3.37 0 0 0 .94 2.61"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-up">
+                    <div class="project-card-accent" aria-hidden="true"></div>
+                    <div class="project-media">
+                        <div class="project-media-overlay" aria-hidden="true"></div>
+                        <span class="project-media-icon" aria-hidden="true">🔢</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Counter App</h3>
+                        <div class="project-tech">
+                            <span class="project-tech-tag">HTML</span>
+                            <span class="project-tech-tag">CSS</span>
+                            <span class="project-tech-tag">JavaScript</span>
+                        </div>
+                        <p class="project-desc">An interactive counter application with increase, decrease and reset functionality using JavaScript.</p>
+                        <div class="project-links">
+                            <a href="https://ccounter-aapp.netlify.app/" target="_blank" class="btn btn-sm btn-primary">
+                                Live Demo
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                            <a href="https://github.com/laibanawaz45/Counter-App" target="_blank" class="btn btn-sm btn-outline btn-outline-primary">
+                                GitHub
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.58-3.18 5.07 5.07 0 0 0-.34-2.73m-1.32 2.05a2.44 2.44 0 0 0 0 1.76A2.44 2.44 0 0 0 19 13.47V7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6.53a2.44 2.44 0 0 0 .34 1.41 2.44 2.44 0 0 0 1.76 1.14 2.44 2.44 0 0 0 1.41-.34 2.44 2.44 0 0 0 1.14-1.76 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-1.76 1.14 2.44 2.44 0 0 0-.34-1.41 2.44 2.44 0 0 0-1.76-1.14 2.44 2.44 0 0 0-1.41.34 2.44 2.44 0 0 0-.78 2.14 5.07 5.07 0 0 0-.34 2.73 5.44 5.44 0 0 0-1.58 3.18c1.27 3.14 4.76 5.27 6.44 7a3.37 3.37 0 0 0 .94 2.61"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-up">
+                    <div class="project-card-accent" aria-hidden="true"></div>
+                    <div class="project-media">
+                        <div class="project-media-overlay" aria-hidden="true"></div>
+                        <span class="project-media-icon" aria-hidden="true">🎨</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Color Changer</h3>
+                        <div class="project-tech">
+                            <span class="project-tech-tag">HTML</span>
+                            <span class="project-tech-tag">CSS</span>
+                            <span class="project-tech-tag">JavaScript</span>
+                        </div>
+                        <p class="project-desc">An interactive color changer built using JavaScript and DOM manipulation.</p>
+                        <div class="project-links">
+                            <a href="https://bbackground-changer.netlify.app/" target="_blank" class="btn btn-sm btn-primary">
+                                Live Demo
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                            <a href="https://github.com/laibanawaz45/Background-Changer" target="_blank" class="btn btn-sm btn-outline btn-outline-primary">
+                                GitHub
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.58-3.18 5.07 5.07 0 0 0-.34-2.73m-1.32 2.05a2.44 2.44 0 0 0 0 1.76A2.44 2.44 0 0 0 19 13.47V7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6.53a2.44 2.44 0 0 0 .34 1.41 2.44 2.44 0 0 0 1.76 1.14 2.44 2.44 0 0 0 1.41-.34 2.44 2.44 0 0 0 1.14-1.76 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-1.76 1.14 2.44 2.44 0 0 0-.34-1.41 2.44 2.44 0 0 0-1.76-1.14 2.44 2.44 0 0 0-1.41.34 2.44 2.44 0 0 0-.78 2.14 5.07 5.07 0 0 0-.34 2.73 5.44 5.44 0 0 0-1.58 3.18c1.27 3.14 4.76 5.27 6.44 7a3.37 3.37 0 0 0 .94 2.61"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="learning">
+        <div class="container">
+            <div class="learning-content fade-up">
+                <span class="section-eyebrow">
+                    <span class="section-eyebrow-dot" aria-hidden="true"></span>
+                    Growth
+                </span>
+                <h2 class="section-title">Learning Journey</h2>
+                <h3 class="learning-subtitle">Student at SMIT</h3>
+                <p>Currently studying front-end development at SMIT — learning through coursework, documentation and hands-on projects.</p>
+                <div class="learning-path">
+                    <span class="path-step completed">HTML</span>
+                    <span class="path-arrow" aria-hidden="true">→</span>
+                    <span class="path-step completed">CSS</span>
+                    <span class="path-arrow" aria-hidden="true">→</span>
+                    <span class="path-step completed">JavaScript</span>
+                    <span class="path-arrow" aria-hidden="true">→</span>
+                    <span class="path-step active">Git &amp; GitHub</span>
+                    <span class="path-arrow" aria-hidden="true">→</span>
+                    <span class="path-step future">APIs</span>
+                    <span class="path-arrow" aria-hidden="true">→</span>
+                    <span class="path-step future">React</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-card fade-up">
+                <div class="contact-card-glow" aria-hidden="true"></div>
+                <div class="contact-card-top" aria-hidden="true"></div>
+                <span class="contact-eyebrow">
+                    <span class="contact-eyebrow-dot" aria-hidden="true"></span>
+                    Reach out
+                </span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-desc">I'm open to internships, junior opportunities and freelance projects.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/" target="_blank" class="btn btn-primary">
+                        GitHub
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.58-3.18 5.07 5.07 0 0 0-.34-2.73m-1.32 2.05a2.44 2.44 0 0 0 0 1.76A2.44 2.44 0 0 0 19 13.47V7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6.53a2.44 2.44 0 0 0 .34 1.41 2.44 2.44 0 0 0 1.76 1.14 2.44 2.44 0 0 0 1.41-.34 2.44 2.44 0 0 0 1.14-1.76 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-.78-2.14 2.44 2.44 0 0 0-1.76 1.14 2.44 2.44 0 0 0-.34-1.41 2.44 2.44 0 0 0-1.76-1.14 2.44 2.44 0 0 0-1.41.34 2.44 2.44 0 0 0-.78 2.14 5.07 5.07 0 0 0-.34 2.73 5.44 5.44 0 0 0-1.58 3.18c1.27 3.14 4.76 5.27 6.44 7a3.37 3.37 0 0 0 .94 2.61"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class="btn btn-outline btn-outline-primary">
+                        LinkedIn
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7a6 6 0 0 1-6 6 5 5 0 0 0 5 5v.01P6.5 16.5 5.5 15.5l-1-1"/></svg>
+                    </a>
+                    <a href="mailto:laiba@gmail.com" class="btn btn-outline btn-outline-primary">
+                        Email
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-glow" aria-hidden="true"></div>
+        <div class="container">
+            <div class="footer-line">
+                <span class="footer-dot" aria-hidden="true"></span>
+                <span class="footer-text">&copy; 2026 Laiba. Built with HTML, CSS &amp; JavaScript.</span>
+                <span class="footer-dot" aria-hidden="true"></span>
+            </div>
+            <div class="footer-line" style="margin-top: 8px;">
+                <span class="footer-dot" aria-hidden="true"></span>
+                <span class="footer-text">
+                    Designed with
+                    <a href="https://21st.dev" target="_blank" rel="noopener">21.dev</a>
+                    &
+                    <a href="https://recent.design" target="_blank" rel="noopener">recent.design</a>
+                </span>
+                <span class="footer-dot" aria-hidden="true"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
